@@ -1,0 +1,21 @@
+{% load static %}
+<head>
+  <link rel="stylesheet" href={% static 'fsApp/index.css' %} />
+</head>
+
+<h1>Merhaba</h1>
+<h2>Merhaba</h2>
+
+{{ request.user }}
+<br />
+{# fs comment #} {{ caption | title }}
+<br />
+<ul>
+  {% for i in my_list %}
+  <li>{{i}}</li>
+  {% endfor %}
+</ul>
+
+{% comment %} This is Django Comment {% endcomment %}
+<!-- This is HTML Comment-->
+<img src={% static 'fsApp/djangog.jpg' %} alt="example" width="300">
